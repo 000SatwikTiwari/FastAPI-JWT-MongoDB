@@ -1,8 +1,8 @@
 fastapi==0.109.1
 uvicorn==0.23.2
-pymongo==5.6.0
+pymongo==5.5.0
 python-dotenv==1.0.0
-passlib==1.7.4  # 1.7.5 nahi, 1.7.4 ka version 3.12 ke saath work karega
+passlib==1.7.4
 bcrypt==4.1.1
 python-jose==3.3.0
 email-validator==2.0.0
