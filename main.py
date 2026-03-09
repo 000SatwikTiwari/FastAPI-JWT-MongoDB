@@ -1,5 +1,3 @@
-# uvicorn prac3:app --reload
-
 from fastapi import FastAPI
 from pymongo import MongoClient
 from pydantic import BaseModel
@@ -399,36 +397,4 @@ def delete_account(credentials: HTTPAuthorizationCredentials = Depends(security)
 
 
 
-##Register
-#↓
-##OTP verification
-#↓
-##User saved in MongoDB
 
-##Login
-#↓
-##Verify password
-#↓
-##Generate
-   ##access_token (15 min)
-   ##refresh_token (7 days)
-
-##User creates note
-#↓
-##Authorization: Bearer access_token
-#↓
-##Server decodes token
-#↓
-##Gets user_id
-#↓
-##Saves note with that user_id
-
-##User gets notes
-#↓
-##Server finds notes where user_id = token user_id
-
-##Access token expires
-#↓
-##User sends refresh token
-#↓
-##Server gives new access token
